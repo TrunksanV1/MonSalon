@@ -1,0 +1,322 @@
+/* Styles généraux */
+body {
+    font-family: 'Lato', Tahoma, Geneva, Verdana, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #353535;
+    color: #2a2a2a;
+    line-height: 1.7;
+}
+
+/* Typographie */
+h1, h2, h3 {
+    font-family: 'Playfair Display', serif;
+    color: #000000;
+}
+
+p {
+    font-family: 'Playfair Display', serif;
+}
+
+a {
+    color: #b8336a;
+    text-decoration: none;
+}
+
+a:hover {
+    color: #a0265a;
+    text-decoration: underline;
+}
+
+/* En-tête */
+header {
+    background-color: #ffffff;
+    color: #fff;
+    padding: 20px 0;
+    text-align: center;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+header h1 {
+    margin: 0;
+    font-size: 2.5em; /* Ajusté pour mobile */
+    font-weight: 700;
+    letter-spacing: 2px;
+    text-transform: uppercase;
+}
+
+header nav a {
+    color: #000000;
+    margin: 0 10px; /* Réduit l'espacement pour mobile */
+    font-size: 1em; /* Ajusté pour mobile */
+    font-weight: 600;
+}
+
+header nav .btn {
+    background-color: #b8336a;
+    color: #fff;
+    padding: 8px 15px; /* Ajusté pour mobile */
+    border-radius: 50px;
+    font-weight: 700;
+    transition: background-color 0.3s ease;
+}
+
+header nav .btn:hover {
+    background-color: #a0265a;
+}
+
+/* Hero Section */
+.hero-section {
+    background: url('bg.jpg') no-repeat center center/cover;
+    color: #fff;
+    padding: 60px 20px; /* Ajusté pour mobile */
+    text-align: center;
+}
+
+.hero-section h1 {
+    font-size: 2.5em; /* Ajusté pour mobile */
+    margin-bottom: 20px;
+    color: #ffffff;
+    text-shadow: 2px 2px 8px rgba(0, 0, 0, 0.3);
+}
+
+.hero-section p {
+    font-size: 1.2em; /* Ajusté pour mobile */
+    color: #ffffff;
+    margin-bottom: 40px;
+}
+
+.hero-section .btn {
+    padding: 12px 25px; /* Ajusté pour mobile */
+    font-size: 1em; /* Ajusté pour mobile */
+}
+
+/* À propos */
+.about-section {
+    display: flex;
+    flex-direction: column; /* Changement pour mobile */
+    align-items: center; /* Centre le contenu */
+    padding: 40px 20px; /* Ajusté pour mobile */
+    text-align: center;
+}
+
+.about-section img {
+    max-width: 100%;
+    height: auto;
+    border-radius: 12px;
+    margin-bottom: 30px;
+}
+
+.about-section .content {
+    max-width: 800px;
+    padding-left: 0; /* Supprimé pour mobile */
+}
+
+.about-section h2 {
+    font-size: 2.2em; /* Ajusté pour mobile */    
+    color: #ffffff;
+}
+
+.about-section p {
+    font-size: 1.1em; /* Ajusté pour mobile */
+    color: #ffffff;
+}
+
+/* Services */
+.services-section {
+    padding: 40px 20px; /* Ajusté pour mobile */
+    text-align: center;
+}
+
+.services-section h2 {
+    font-size: 2.2em; /* Ajusté pour mobile */
+    color: #ffffff;
+}
+
+.services-container {
+    display: flex;
+    justify-content: center; 
+    flex-wrap: wrap; 
+    gap: 20px; /* Réduit pour mobile */
+}
+
+.service-card {
+    background: #fff;
+    border-radius: 12px;
+    box-shadow: 0 8px 15px rgba(0, 0, 0, 0.1);
+    padding: 20px; /* Ajusté pour mobile */
+    width: calc(100% - 40px); /* Adapté pour mobile */
+    max-width: 300px; /* Largeur maximum pour les écrans plus larges */
+    text-align: center;
+    transition: transform 0.3s;
+}
+
+.service-card:hover {
+    transform: scale(1.05);
+}
+
+.service-card img {
+    width: 100%;
+    border-radius: 12px;
+    margin-bottom: 10px; /* Ajusté pour mobile */
+}
+
+.service-card h3 {
+    font-size: 1.4em; /* Ajusté pour mobile */
+}
+
+/* Contact */
+.contact-section {
+    text-align: center;
+    padding: 40px 20px; /* Ajusté pour mobile */
+}
+
+.contact-section h2 {
+    font-size: 2.2em; /* Ajusté pour mobile */
+    color: #ffffff;
+}
+
+.contact-section p {
+    color: #ffffff;
+
+}
+
+.contact-section form {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    max-width: 100%; /* Adapté pour mobile */
+    margin: 0 auto;
+}
+
+.contact-section input, 
+.contact-section textarea {
+    margin: 15px 0;
+    padding: 10px; /* Ajusté pour mobile */
+    width: 100%;
+    max-width: 90%; /* Adapté pour mobile */
+    border: 1px solid #ddd;
+    border-radius: 8px;
+}
+
+/* Footer */
+footer {
+    background-color: #353535;
+    color: #fff;
+    text-align: center;
+    padding: 20px 0; /* Ajusté pour mobile */
+}
+
+footer p {
+    color: #ffffff;
+}
+
+/* Animations */
+@keyframes fadeIn {
+    0% {
+        opacity: 0;
+        transform: translateY(20px);
+    }
+    100% {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+@keyframes slideIn {
+    0% {
+        opacity: 0;
+        transform: translateX(-20px);
+    }
+    100% {
+        opacity: 1;
+        transform: translateX(0);
+    }
+}
+
+@keyframes zoomIn {
+    0% {
+        opacity: 0;
+        transform: scale(0.5);
+    }
+    100% {
+        opacity: 1;
+        transform: scale(1);
+    }
+}
+
+/* Application des animations aux sections */
+.header {
+    animation: fadeIn 0.6s ease-in-out forwards;
+}
+
+.hero-section {
+    animation: fadeIn 0.8s ease-in-out forwards;
+}
+
+.about-section {
+    animation: slideIn 0.8s ease-in-out forwards;
+}
+
+.services-section {
+    animation: zoomIn 0.8s ease-in-out forwards;
+}
+
+.contact-section {
+    animation: fadeIn 0.8s ease-in-out forwards;
+}
+
+/* Classe pour l'animation au scroll */
+.animate {
+    opacity: 1;
+    transform: translateY(0);
+    transition: all 0.5s ease;
+}
+
+/* Initialisation des sections pour les animations */
+section {
+    opacity: 0;
+    transform: translateY(20px);
+}
+
+/* Styles Responsives */
+@media (max-width: 600px) {
+    header h1 {
+        font-size: 2em; /* Ajustement supplémentaire pour les petits écrans */
+    }
+
+    header nav a {
+        font-size: 0.9em; /* Ajusté pour mobile */
+    }
+
+    header nav .btn {
+        padding: 6px 10px; /* Ajusté pour mobile */
+    }
+
+    .hero-section h1 {
+        font-size: 2em; /* Ajusté pour mobile */
+    }
+
+    .hero-section p {
+        font-size: 1em; /* Ajusté pour mobile */
+    }
+
+    .service-card {
+        width: calc(100% - 30px); /* Ajuste la largeur sur mobile */
+        padding: 15px; /* Réduit le padding pour mobile */
+    }
+
+    .contact-section h2 {
+        font-size: 1.8em; /* Ajustement pour mobile */
+    }
+
+    .contact-section input,
+    .contact-section textarea {
+        padding: 12px; /* Ajusté pour mobile */
+        font-size: 1em; /* Ajusté pour mobile */
+    }
+
+    footer {
+        padding: 15px 0; /* Ajusté pour mobile */
+    }
+}

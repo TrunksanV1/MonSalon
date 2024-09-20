@@ -1,0 +1,332 @@
+/* Styles généraux */
+body {
+    font-family: 'Lato', Tahoma, Geneva, Verdana, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #353535;
+    color: #2a2a2a;
+    line-height: 1.7;
+}
+
+/* Typographie */
+h1, h2, h3, p {
+    font-family: 'Playfair Display', serif;
+    color: #000000;
+}
+
+a {
+    color: #b8336a;
+    text-decoration: none;
+}
+
+a:hover {
+    color: #a0265a;
+    text-decoration: underline;
+}
+
+/* En-tête */
+header {
+    background-color: #ffffff;
+    color: #fff;
+    padding: 30px 0;
+    text-align: center;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+header h1 {
+    margin: 0;
+    font-size: 3em;
+    font-weight: 700;
+    letter-spacing: 2px;
+    text-transform: uppercase;
+}
+
+header nav a {
+    color: #000000;
+    margin: 0 20px;
+    font-size: 1.2em;
+    font-weight: 600;
+}
+
+header nav .btn {
+    background-color: #b8336a;
+    color: #fff;
+    padding: 10px 25px;
+    border-radius: 50px;
+    font-weight: 700;
+    transition: background-color 0.3s ease;
+}
+
+header nav .btn:hover {
+    background-color: #a0265a;
+}
+
+/* Hero Section */
+.hero-section {
+    background: url('bg.jpg') no-repeat center center/cover;
+    color: #fff;
+    padding: 100px 20px;
+    text-align: center;
+    background-color: #353535; /* overlay */
+}
+
+.hero-section h1 {
+    font-size: 3.5em;
+    margin-bottom: 20px;
+    color: #ffffff;
+    text-shadow: 2px 2px 8px rgba(0, 0, 0, 0.3);
+}
+
+.hero-section p {
+    font-size: 1.4em;
+    margin-bottom: 40px;
+    color: #ffffff;
+}
+
+.hero-section .btn {
+    background-color: #b8336a;
+    color: #fff;
+    padding: 15px 35px;
+    font-size: 1.2em;
+    border-radius: 50px;
+    box-shadow: 0 8px 15px rgba(0, 0, 0, 0.2);
+    transition: transform 0.3s ease;
+}
+
+.hero-section .btn:hover {
+    transform: translateY(-5px);
+    background-color: #a0265a;
+}
+
+/* À propos */
+.about-section {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    text-align: center;
+    background-color: #353535;
+    padding: 80px 20px;
+}
+
+.about-section img {
+    max-width: 100%;
+    height: auto;
+    border-radius: 12px;
+    margin-bottom: 30px;
+}
+
+.about-section .content {
+    max-width: 800px;
+    padding-left: 3%;
+}
+
+.about-section h2 {
+    font-size: 2.8em;
+    margin-bottom: 20px;
+    color: #ffffff;
+}
+
+.about-section p {
+    font-size: 1.3em;
+    line-height: 1.8;
+    color: #ffffff;
+}
+
+.about-section a {
+    color: #b8336a;
+    font-weight: 700;
+}
+
+/* Services */
+.services-section {
+    background-color: #353535;
+    padding: 60px 20px;
+    text-align: center; /* Centrer le texte globalement */
+}
+
+.services-section h2 {
+    font-size: 2.5em;
+    margin-bottom: 50px;
+    color: #ffffff;
+}
+
+.services-container {
+    display: flex;
+    justify-content: center; /* Centrer les cartes horizontalement */
+    flex-wrap: wrap; /* Permettre aux cartes de s'ajuster sur plusieurs lignes si nécessaire */
+    gap: 70px; /* Espace entre les cartes */
+}
+
+.service-card {
+    background: #fff;
+    border-radius: 12px;
+    box-shadow: 0 8px 15px rgba(0, 0, 0, 0.1);
+    padding: 30px;
+    width: 300px;
+    text-align: center; /* Centrer le texte à l'intérieur de chaque carte */
+    transition: transform 0.3s;
+}
+
+.service-card:hover {
+    transform: scale(1.05);
+}
+
+.service-card img {
+    width: 100%;
+    border-radius: 12px;
+    margin-bottom: 20px;
+}
+
+.service-card h3 {
+    font-size: 1.5em;
+    margin-bottom: 15px;
+    color: #2a2a2a;
+}
+
+.service-card p {
+    font-size: 1.1em;
+    color: #000000;
+}
+
+
+/* Contact */
+.contact-section {
+    background-color: #353535;
+    text-align: center; /* Centrer le texte dans la section contact */
+    padding-bottom: 1%;
+}
+
+.contact-section h2 {
+    font-size: 2.5em;
+    margin-bottom: 30px;
+    color: #ffffff;
+}
+
+.contact-section p {
+    color: #ffffff;
+}
+
+.contact-section form {
+    display: flex;
+    flex-direction: column;
+    align-items: center; /* Centrer le formulaire */
+    max-width: 600px;
+    margin: 0 auto;
+}
+
+.contact-section input, 
+.contact-section textarea {
+    margin: 15px 0;
+    padding: 15px;
+    width: 100%;
+    max-width: 500px;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    font-size: 1.1em;
+}
+
+.contact-section button {
+    padding: 15px 40px;
+    background-color: #333;
+    color: #fff;
+    border: none;
+    border-radius: 50px;
+    cursor: pointer;
+    font-size: 1.2em;
+    font-weight: 700;
+}
+
+.contact-section button:hover {
+    background-color: #444;
+}
+
+/* Footer */
+footer {
+    background-color: #353535;
+    color: #fff;
+    text-align: center;
+    padding: 25px 0;
+    box-shadow: 0 -4px 6px rgba(0, 0, 0, 0.1);
+}
+
+footer p {
+    margin: 0;
+}
+
+footer a {
+    color: #b8336a;
+    margin: 0 10px;
+    font-weight: 700;
+}
+
+footer a:hover {
+    text-decoration: underline;
+}
+
+/* Animations */
+@keyframes fadeIn {
+    0% {
+        opacity: 0;
+        transform: translateY(20px);
+    }
+    100% {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+@keyframes slideIn {
+    0% {
+        opacity: 0;
+        transform: translateX(-20px);
+    }
+    100% {
+        opacity: 1;
+        transform: translateX(0);
+    }
+}
+
+@keyframes zoomIn {
+    0% {
+        opacity: 0;
+        transform: scale(0.5);
+    }
+    100% {
+        opacity: 1;
+        transform: scale(1);
+    }
+}
+
+/* Application des animations aux sections */
+.header {
+    animation: fadeIn 0.6s ease-in-out forwards;
+}
+
+.hero-section {
+    animation: fadeIn 0.8s ease-in-out forwards;
+}
+
+.about-section {
+    animation: slideIn 0.8s ease-in-out forwards;
+}
+
+.services-section {
+    animation: zoomIn 0.8s ease-in-out forwards;
+}
+
+.contact-section {
+    animation: fadeIn 0.8s ease-in-out forwards;
+}
+
+/* Classe pour l'animation au scroll */
+.animate {
+    opacity: 1;
+    transform: translateY(0);
+    transition: all 0.5s ease;
+}
+
+/* Initialisation des sections pour les animations */
+section {
+    opacity: 0;
+    transform: translateY(20px);
+}

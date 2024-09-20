@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mon Salon de Coiffure</title>
+    <link id="stylesheet" rel="stylesheet" href="test.css">
+</head>
+<body>
+    <header>
+        <div class="container">
+            <h1>Mon Salon de Coiffure</h1>
+            <nav>
+                <a href="#home">Accueil</a>
+                <a href="#about">À Propos</a>
+                <a href="#services">Services</a>
+                <a href="#contact" class="btn">Contact</a>
+            </nav>
+        </div>
+    </header>
+    
+    <section id="home" class="hero-section">
+        <h1>Vos experts en coiffure</h1>
+        <p>Obtenez le style parfait qui correspond à votre personnalité.</p>
+        <a href="#services" class="btn">Voir nos services</a>
+    </section>
+    
+    <section id="about" class="about-section">
+        <img src="banniere.jpg" alt="À propos de nous">
+        <div class="content">
+            <h2>Des soins experts à votre service</h2>
+            <p>Chez Mon Salon de Coiffure, nous sommes fiers d’offrir une expérience de soin personnalisée, adaptée à chacun. Situé au cœur de Nice, notre petit salon accueille tous ceux qui souhaitent rehausser leur style.</p>
+            <a href="#contact">Nous contacter</a>
+        </div>
+    </section>
+    
+    <section id="services" class="services-section">
+    <h2>Des coupes et styles de qualité pour tous</h2>
+    <div class="services-container">
+        <div class="service-card">
+            <img src="Image1.png" alt="Coupe classique">
+            <h3>Coupe classique</h3>
+            <p>Optez pour un look intemporel avec notre coupe classique.</p>
+        </div>
+        <div class="service-card">
+            <img src="image2.webp" alt="Entretien de la barbe">
+            <h3>Entretien de la barbe</h3>
+            <p>Gardez votre barbe nette et bien taillée.</p>
+        </div>
+        <div class="service-card">
+            <img src="image3.jpg" alt="Soins capillaires et shampoings">
+            <h3>Soins et shampoings</h3>
+            <p>Profitez de shampoings et de soins nutritifs pour vos cheveux.</p>
+        </div>
+    </div>
+</section>
+
+    
+    <section id="contact" class="contact-section">
+        <h2>Contactez-nous</h2>
+        <form action="#">
+            <input type="text" placeholder="Votre nom" required>
+            <input type="email" placeholder="Votre email" required>
+            <textarea placeholder="Votre message" required></textarea>
+            <input type="submit" value="Envoyer le message">
+        </form>
+        <div class="contact-info">
+            <p>Appelez-nous : 01-23-45-67-89</p>
+            <p>Email : info@monsalondecoiffure.com</p>
+            <a href="https://www.google.fr/maps/preview" target="_blank">Visitez notre salon</a>
+        </div>
+    </section>
+    
+    <footer>
+        <p>&copy; 2024 Mon Salon de Coiffure. Tous droits réservés.</p>
+        <a href="#privacy-policy">Politique de confidentialité</a>
+        <a href="#terms">Conditions d'utilisation</a>
+    </footer>   
+    
+    <script>
+        // Vérifie la largeur de l'écran et charge le bon fichier CSS
+
+        let resize = function(){
+            const isMobile = window.matchMedia("(max-width: 600px)").matches;
+            const stylesheet = document.getElementById("stylesheet");
+            if (stylesheet) {  // Vérifie que l'élément existe
+                stylesheet.href = isMobile ? "telephone.css" : "test.css";
+            } else {
+                console.error("L'élément stylesheet n'a pas été trouvé.");
+            }
+        }
+
+        window.onload = function() {
+            resize();
+        };
+
+        window.addEventListener("resize",(e)=>{
+            resize();
+        })
+    </script>
+
+</body>
+</html>
